@@ -13,7 +13,7 @@ export default function App() {
     setData(null);
 
     const res = await fetch(
-      `http://localhost:8000/weather?city=${city}`
+      `https://weather-41le.onrender.com/weather?city=${city}`
     );
     const json = await res.json();
     setData(json);
